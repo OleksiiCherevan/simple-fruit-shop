@@ -1,0 +1,21 @@
+.text {
+    display: flex;
+    align-items: center;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+
+    letter-spacing: -0.02em;
+
+    color: var(--color-font);
+}
+
+.symbol {
+    padding-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 35px;
+}

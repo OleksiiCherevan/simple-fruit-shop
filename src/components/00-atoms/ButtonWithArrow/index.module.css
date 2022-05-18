@@ -1,0 +1,33 @@
+.button {
+    height: 56px;
+    width: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 16px 103px;
+    gap: 8px;
+
+    border-radius: 16px;
+    background: var(--color-secondary);
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--color-font-additional);
+}
+
+.arrow {
+    display: none;
+    stroke: var(--color-font-additional);
+}
+
+.button:hover .arrow {
+    display: block;
+}

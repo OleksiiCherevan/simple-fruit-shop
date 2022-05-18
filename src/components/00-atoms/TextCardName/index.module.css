@@ -1,0 +1,13 @@
+.text {
+    cursor: pointer;
+    
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    letter-spacing: -0.02em;
+
+    color: var(--color-font);
+}
