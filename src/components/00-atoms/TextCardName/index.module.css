@@ -7,6 +7,8 @@
     font-size: 40px;
     line-height: 48px;
 
+    text-transform: capitalize;
+
     letter-spacing: -0.02em;
 
     color: var(--color-font);

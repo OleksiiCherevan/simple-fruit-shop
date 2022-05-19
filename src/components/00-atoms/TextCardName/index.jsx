@@ -2,7 +2,7 @@ import style from './index.module.css';
 
 import React from 'react'
 
-const TextCardDescription = (props) => {
+const TextCardName = (props) => {
   const {children} = props;
   return (
     <div className={style['text']}>
@@ -11,4 +11,4 @@ const TextCardDescription = (props) => {
   )
 }
 
-export default TextCardDescription
+export default TextCardName
