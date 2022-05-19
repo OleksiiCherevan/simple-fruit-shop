@@ -1,6 +1,8 @@
 .button {
+    cursor: pointer;
     height: 56px;
-    width: 288px;
+    max-width: 256px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,5 +31,7 @@
 }
 
 .button:hover .arrow {
-    display: block;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
 }
