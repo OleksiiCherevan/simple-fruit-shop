@@ -1,4 +1,4 @@
-/* download font  */
+/* connect font  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 :root {
@@ -12,6 +12,7 @@
   --color-border-text-field: rgb(0,0,0,0.2);
   --color-primary: #50DAA8;
   --color-secondary: #4BCFA0;
+  --color-error: #E43F3F;
   /* font */
 }
 

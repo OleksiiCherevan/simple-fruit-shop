@@ -1,8 +1,41 @@
 .app {
-  padding: 10px;
-  height: 100vh;
-  background-color: var(--color-background);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px 10px;
+  gap: 70px;
+  background-color: var(--color-background);
+}
+
+.card {
+  
+  
+}
+
+.content {
+  max-width: 1170px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 40px 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .app {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    gap: 40px 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .app {
+    padding: 104px 20px;
+  }
 }
