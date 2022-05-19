@@ -1,0 +1,79 @@
+.field {
+}
+
+.inner-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    width: 256px;
+    height: 56px;
+    padding: 0 16px;
+
+    border: 1px solid var(--color-border-text-field);
+    border-radius: 16px;
+    background-color: transparent;
+    outline: none;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.02em;
+
+    color: var(--color-font);
+}
+
+@media screen and (min-width: 768px) {
+    .text {
+        width: 288px;
+    }
+}
+
+.text:focus {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--color-secondary);
+}
+
+.text-error {
+    padding-right: calc(16px + 24px);
+    border: 1px solid var(--color-error);
+}
+
+.text-error:focus {
+    padding-right: calc(16px + 24px);
+    border: 1px solid var(--color-error);
+}
+
+.text::placeholder {
+    color: var(--color-font);
+    opacity: 0.5;
+}
+
+.error-image {
+    position: absolute;
+    right: 11px;
+}
+
+.error-message {
+    width: 256px;
+    height: 16px;
+
+    text-align: start;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: -0.02em;
+
+    color: #e43f3f;
+}
