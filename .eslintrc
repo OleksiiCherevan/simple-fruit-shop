@@ -1,6 +1,10 @@
 {
+    "env": {
+        "node": true,
+        "es6": true
+      },
     "parserOptions": {
-        "ecmaVersion": 6,
+        "ecmaVersion": 8,
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
