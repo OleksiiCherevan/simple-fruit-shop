@@ -1,6 +1,6 @@
 import style from './index.module.css';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import ConfirmForm from 'components/01-molecules/ConfirmForm';
 
 import { CLOSE_CIRCLE } from 'assets/svgRaw';
@@ -10,7 +10,7 @@ const ModalConfirm = (props) => {
 
   const onHandleStopPropagation = e => {
     e.stopPropagation();
-  };
+  }
 
   return (
     <div className={style['modal']} onMouseDown={onCloseModal}>
@@ -21,7 +21,7 @@ const ModalConfirm = (props) => {
         <div className={style['button']} onClick={onCloseModal}>{CLOSE_CIRCLE}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ModalConfirm;
+export default ModalConfirm
