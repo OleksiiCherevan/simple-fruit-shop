@@ -14,7 +14,7 @@ const FieldWithErrorRule = (props) => {
   const onTextChange = (text) => {
     let isValid = !validation(text, setErrorMessage);
     setIsCorrect(isValid);
-    onChange(text);
+    onChange(text, isValid);
   };
 
   const onFocused = () => {
