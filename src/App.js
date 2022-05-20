@@ -22,35 +22,35 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchCards());
-  }, [])
+  }, []);
 
   const onBuyClick = (e) => {
     setIsShowModal(true);
-  }
+  };
 
   const onBuyCheapest = e => {
     const cheapest = [...cards].sort((cardA, cardB) =>  cardA.price - cardB.price).shift();
     onSelectedCard(cheapest);
     onShowModal();
-  }
+  };
 
   const onCloseModal = (e) => {
-    setIsShowModal(false)
-  }
+    setIsShowModal(false);
+  };
   const onShowModal = (e) => {
-    setIsShowModal(true)
-  }
+    setIsShowModal(true);
+  };
 
   const onSelectedCard = card => {
-    dispatch(setSelectedCard({ card }))
-  }
+    dispatch(setSelectedCard({ card }));
+  };
 
   if (error) {
-    return <h1>Happened something bad =</h1>
+    return <h1>Happened something bad =</h1>;
   }
 
   if (status === "pending") {
-    return <PreloaderWindow></PreloaderWindow>
+    return <PreloaderWindow></PreloaderWindow>;
   }
 
   return (
@@ -65,7 +65,7 @@ const App = () => {
 
       {isShowModal ? <ModalConfirm onCloseModal={onCloseModal}></ModalConfirm> : ""}
     </div>
-  )
-}
+  );
+};
 
 export default App;
