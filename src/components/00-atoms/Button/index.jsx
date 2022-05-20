@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 import style from './index.module.css';
 
 const Button = (props) => {
-  const {children, onClick = () => {}} = props
+  const { children, onClick = () => { } } = props;
 
   return (
-    <div className={style['button']} onClick={onClick}>
+    <button className={style['button']} onClick={onClick}>
       {children}
-    </div>
-  )
-}
+    </button>
+  );
+};
 
-export default Button
+export default Button;
