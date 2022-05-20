@@ -1,6 +1,6 @@
 import style from './index.module.css';
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import TextCardCategory from 'components/00-atoms/TextCardCategory';
 import TextCardPrice from 'components/00-atoms/TextCardPrice';
 import TextCardName from 'components/00-atoms/TextCardName';
@@ -18,7 +18,7 @@ const Card = (props) => {
   const onBuyClick = e => {
     onClick(e);
     dispatch(setSelectedCard({card}));
-  }
+  };
 
   return (
     <div className={style['card']} onMouseEnter={e => setIsHover(true)} onMouseLeave={e => setIsHover(false)}>
@@ -33,7 +33,7 @@ const Card = (props) => {
         <ButtonSmall isActive={isHover} onClick = {onBuyClick}>Buy</ButtonSmall>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

@@ -1,6 +1,6 @@
 import style from './index.module.css';
 
-import React from 'react'
+import React from 'react';
 
 const TextCardPrice = (props) => {
   const {children, symbol = '$'} = props;
@@ -9,7 +9,7 @@ const TextCardPrice = (props) => {
       <div className={style['symbol']}>{symbol}</div>
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default TextCardPrice
+export default TextCardPrice;
