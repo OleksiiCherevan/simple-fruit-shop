@@ -7,11 +7,11 @@ export const fetchCards = createAsyncThunk("cards/fetchCards", async function ()
     .then(response => response)
     .catch(e => {
         return e;
-    })
+    });
 
     const cards = response.data;
     return cards;
-})
+});
 
 const cardsSlice = createSlice({
     name: "cards",

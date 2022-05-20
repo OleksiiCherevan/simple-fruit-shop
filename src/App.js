@@ -1,14 +1,11 @@
 import './App.css';
-import TextField from 'components/00-atoms/TextField';
 import Button from 'components/00-atoms/Button';
 import Card from 'components/01-molecules/Card';
-import ConfirmForm from 'components/01-molecules/ConfirmForm';
 import PreloaderWindow from 'components/01-molecules/PreloaderWindow';
 import ModalConfirm from 'components/02-organisms/ModalConfirm';
 
 import { useEffect, useState } from 'react';
 
-import { LINK_CARDS } from 'assets/links';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { fetchCards, setSelectedCard } from 'store/cardsSlice';
