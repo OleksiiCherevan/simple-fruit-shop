@@ -2,16 +2,22 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { LINK_CARDS } from "assets/links";
 import axios from "axios";
 
-export const fetchCards = createAsyncThunk("cards/fetchCards", async function () {
-    const response = await axios(LINK_CARDS)
-    .then(response => response)
-    .catch(e => {
-        return e;
-    });
+export const fetchCards = createAsyncThunk(
+    "cards/fetchCards",
+    async function () {
+        const response = await axios(LINK_CARDS)
+            .then((response) => {
+                console.log(response);
+                return response;
+            })
+            .catch((e) => {
+                return e;
+            });
 
-    const cards = response.data;
-    return cards;
-});
+        const cards = response.data;
+        return cards;
+    }
+);
 
 const cardsSlice = createSlice({
     name: "cards",
@@ -19,14 +25,14 @@ const cardsSlice = createSlice({
         cards: [],
         selectedCard: {},
         status: null,
-        error: null
+        error: null,
     },
     reducers: {
         setSelectedCard(state, action) {
             const card = action.payload.card;
             state.selectedCard = card;
-        }
-    }, 
+        },
+    },
     extraReducers: {
         [fetchCards.pending]: (state) => {
             state.status = "pending";
@@ -41,7 +47,7 @@ const cardsSlice = createSlice({
             state.status = "rejected";
             state.error = action.payload;
         },
-    }
+    },
 });
 
 export const { setSelectedCard } = cardsSlice.actions;

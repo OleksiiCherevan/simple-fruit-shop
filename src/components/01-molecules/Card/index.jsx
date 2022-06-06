@@ -1,10 +1,12 @@
 import style from './index.module.css';
 
 import React, { useState } from 'react';
+
 import TextCardCategory from 'components/00-atoms/TextCardCategory';
 import TextCardPrice from 'components/00-atoms/TextCardPrice';
 import TextCardName from 'components/00-atoms/TextCardName';
 import ButtonSmall from 'components/00-atoms/ButtonSmall';
+
 import { useDispatch } from 'react-redux';
 import { setSelectedCard } from 'store/cardsSlice';
 

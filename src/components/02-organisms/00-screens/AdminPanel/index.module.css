@@ -1,0 +1,83 @@
+.screen {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .screen {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .fields {
+        align-items: center;
+    }
+}
+
+.header {
+    padding-bottom: 10px;
+}
+
+.left-side {
+    height: 100%;
+    
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    padding-bottom: 10px;
+    width: min-content;
+}
+.card:last-child {
+    padding-bottom: 0px;
+}
+
+.button-remove-card {
+    cursor: pointer;
+    
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    color: red;
+
+    font-size: 24px;
+}
+
+.button-remove-card:hover {
+    color: rgb(203, 3, 3);
+}
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field {
+    display: flex;
+    gap: 10px;
+}
+
+.field > label {
+    width: 100px;
+}
