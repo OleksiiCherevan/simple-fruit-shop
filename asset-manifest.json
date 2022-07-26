@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/simple-fruit-shop/static/css/main.8216af04.css",
+    "main.js": "/simple-fruit-shop/static/js/main.0bb76e43.js",
+    "static/js/787.7de8d527.chunk.js": "/simple-fruit-shop/static/js/787.7de8d527.chunk.js",
+    "index.html": "/simple-fruit-shop/index.html",
+    "main.8216af04.css.map": "/simple-fruit-shop/static/css/main.8216af04.css.map",
+    "main.0bb76e43.js.map": "/simple-fruit-shop/static/js/main.0bb76e43.js.map",
+    "787.7de8d527.chunk.js.map": "/simple-fruit-shop/static/js/787.7de8d527.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8216af04.css",
+    "static/js/main.0bb76e43.js"
+  ]
+}
